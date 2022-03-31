@@ -5,7 +5,6 @@ def clear_terminal():
     """
     os.system('clear')
 
-
 def game_over():
     # Prints "Game Over" text and exits game.
     """
@@ -23,7 +22,6 @@ def game_over():
  \____/\__,_|_| |_| |_|\___|  \___/  \_/ \___|_|
 """)
     
-
     time.sleep(3)
     sys.exit()
 
@@ -31,13 +29,11 @@ def game_over():
 now = datetime.now()
 print(now)
 
-
 # dd/mm/YY H:M:S
 dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
 print("date and time =", dt_string)
 
 score = 0
-
 
 print('''\u001b[32m
 __________________ $$
