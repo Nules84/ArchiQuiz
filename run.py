@@ -1,21 +1,28 @@
-print(data)
-
 def clear_terminal():
     # Clears terminal.
+    """
+    Clears terminal
+    """
     os.system('clear')
 
 
 def game_over():
     # Prints "Game Over" text and exits game.
-    print("\nThank you for playing! Dag dag!")
+    """
+    Prints "Game Over" text and exits game.
+    """
+    print("\nThank you for playing!")
     print("""
  _____                        _____               
+ _____                        _____ 
 |  __ \                      |  _  |               
 | |  \/ __ _ _ __ ___   ___  | | | |_   _____ _ __ 
 | | __ / _` | '_ ` _ \ / _ \ | | | \ \ / / _ \ '__|
 | |_\ \ (_| | | | | | |  __/ \ \_/ /\ V /  __/ |   
+| |_\ \ (_| | | | | | |  __/ \ \_/ /\ V /  __/ |
  \____/\__,_|_| |_| |_|\___|  \___/  \_/ \___|_|
 """)
+    
 
     time.sleep(3)
     sys.exit()
