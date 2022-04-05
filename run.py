@@ -33,13 +33,26 @@ def game_over():
 
 # datetime object containing current date and time
 now = datetime.now()
-print(now)
+# dd/mm/YY H:M
+dt_string = now.strftime("%d/%m/%Y %H:%M")
 
-# dd/mm/YY H:M:S
-dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
-print("date and time =", dt_string)
 
-score = 0
+def run_instructions():
+    """
+    Prints the instructions for the game
+    """
+    print("this game will test your knowledge and")
+    print("questions are based around Architectural History.")
+    print()
+    print('''\u001b[32m===========================================\u001b[0m''')
+    print("1. All you need to do is press a, b or c for your answer.")
+    print("2. The program will tell you if you are correct or incorrect.")
+    print("3. The program will add up your scores.")
+    print("4. The program tells you your score at the end.")
+    print("5. The game is also timed.")
+    print("6. You will be able to save your score to the leaderboard.")
+    print('''\u001b[32m===========================================\u001b[0m''')
+    print()
 
 print('''\u001b[32m
 __________________ $$
@@ -97,14 +110,23 @@ _$$$$$$$$ ____________________$$$$$$​$$
 $$$$$$$$_______________________$$$$​$$$$
 \u001b[0m''')
 
-print("Hello!  Welcome to ArchiQuiz!...\n")
-@@ -96,9 +137,9 @@
-print("===================================================")
+print("Welcome to Archiquiz!...\n")
+print('''\u001b[32m===============================================\u001b[0m''')
+name = input("Please enter your name:\n")
+time.sleep(1)
+clear_terminal()
+print('''\u001b[32m===============================================\u001b[0m''')
+if any(c.isalpha() for c in name):
+    print("Thank you for stopping by, " + name)
+else:
+    print("Thank you for stopping by, Guest")
+print('''\u001b[32m===============================================\u001b[0m''')
 
 class Question:
-     def __init__(self, prompt, answer):
-          self.prompt = prompt
-          self.answer = answer
+    """
+    Questions instance, gets the question
+    and the answer
+    """
     def __init__(self, prompt, answer):
         self.prompt = prompt
         self.answer = answer
