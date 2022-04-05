@@ -133,7 +133,9 @@ class Question:
 
 question_prompts = [
      "Which of these is amongst the most iconic and definitive elements of the Gothic Revival style??\n \
-@@ -166,20 +207,38 @@ def __init__(self, prompt, answer):
+    (a)\
+     (b)\
+     (c)",
 ]
 
 def run_quiz(questions):
