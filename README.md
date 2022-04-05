@@ -51,4 +51,5 @@ In the Connect to GitHub section that appears, select the correct account, and e
 Once Heroku has located the repo select connect.
 This will connect the repo to the app within Heroku. Below the Apps Connected to Heroku section will be the Automatic Deploys section.
 In this section, confirm the correct branch of the repo is selected in the drop-down box, and then click the Enable Automatic Deploys button if you wish to automatically deploy your site in Heroku every time you push changes to GitHub.
+My preference was to do this manually, so I chose not to Enable Automatic Deploys and I updated my Heroku app periodically.
 Heroku will now build the app for you. Once it has completed the build process you will see a 'Your App Was Successfully Deployed' message and a link to the app to visit the live site.
