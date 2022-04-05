@@ -1,3 +1,8 @@
+# Developer: Nuala King
+# Date of release: 15th April 2022
+# Subject: Code Institute Portfolio Project 3 - Python
+# Program Name: "Archiquiz"
+
 def clear_terminal():
     # Clears terminal.
     """
@@ -11,8 +16,7 @@ def game_over():
     Prints "Game Over" text and exits game.
     """
     print("\nThank you for playing!")
-    print("""
- _____                        _____               
+    print("""\u001b[32m           
  _____                        _____ 
 |  __ \                      |  _  |               
 | |  \/ __ _ _ __ ___   ___  | | | |_   _____ _ __ 
@@ -20,9 +24,11 @@ def game_over():
 | |_\ \ (_| | | | | | |  __/ \ \_/ /\ V /  __/ |   
 | |_\ \ (_| | | | | | |  __/ \ \_/ /\ V /  __/ |
  \____/\__,_|_| |_| |_|\___|  \___/  \_/ \___|_|
-""")
+\u001b[0m""")
     
     time.sleep(3)
+    print("Click the blue button at the top to replay the game!")
+    print()
     sys.exit()
 
 # datetime object containing current date and time
@@ -92,7 +98,7 @@ $$$$$$$$_______________________$$$$​$$$$
 \u001b[0m''')
 
 print("Hello!  Welcome to ArchiQuiz!...\n")
-
+@@ -96,9 +137,9 @@
 print("===================================================")
 
 class Question:
